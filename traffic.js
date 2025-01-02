@@ -1,5 +1,5 @@
-var apiKey = "YOUR_API_KEY";
-var centerCoords = [4.89218, 52.37187];
+var apiKey = "a1CowIONSLZB1Mh9XsHj7sPgaCU3HBmB";
+var centerCoords = [ 11.692891511655798,46.56522080404171];
 var initialZoom = 13;
 var map = tt.map({
     key: apiKey,
@@ -324,6 +324,8 @@ function initApplication() {
     map.on("mouseup", onMouseUp);
     map.on("mousemove", onMouseMove);
     map.on("moveend", updateSearchBoxOptions);
+
+    map.addTier(trafficFlowTilesTier);
 }
 
 initApplication();
